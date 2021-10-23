@@ -44,7 +44,7 @@ export const postFood = (req: Request, res: Response) => {
                 res.status(400).json({message: err.message, user});
             });
         } catch (err) {
-            res.status(200).json({ message: err.message, user });
+            res.status(400).json({ message: err.message, user });
         }
     });
 };
