@@ -10,6 +10,7 @@ export type UserDocument = mongoose.Document & {
     healthy: boolean;
     allergens: string[];
     communityIDs: string[];
+    dietaryRestrictions: string[];
 }
 
 const userSchema = new mongoose.Schema<UserDocument>({
@@ -20,7 +21,8 @@ const userSchema = new mongoose.Schema<UserDocument>({
     sustainable: { type: Boolean, required: true, default: true },
     healthy: { type: Boolean, required: true, default: true },
     allergens: { type: [String], required: true, default: [] },
-    communityIDs: { type: [String], required: true, default: [] }
+    communityIDs: { type: [String], required: true, default: [] },
+    dietaryRestrictions: {type: [String], required: true, default: [] }
 }, { timestamps: true });
 
 export const User = mongoose.model<UserDocument>('users', userSchema);
