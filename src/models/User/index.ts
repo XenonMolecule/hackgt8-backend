@@ -7,6 +7,7 @@ export type UserDocument = mongoose.Document & {
     email: string;
     pushTokens: string[];
     auth0AccessToken: string;
+    personalized: boolean;
     sustainable: boolean;
     healthy: boolean;
     allergens: string[];
@@ -21,6 +22,7 @@ const userSchema = new mongoose.Schema<UserDocument>({
     email: { type: String, unique: true, required: true, default: "email@example.com" }, // later down the line, we will make this optional for recipients
     pushTokens: { type: [String], required: true, default: [] }, // expo push tokens
     auth0AccessToken: { type: String, required: true, default: "invalid token" },
+    personalized: { type: Boolean, required: true, default: true},
     sustainable: { type: Boolean, required: true, default: true },
     healthy: { type: Boolean, required: true, default: true },
     allergens: { type: [String], required: true, default: [] },
