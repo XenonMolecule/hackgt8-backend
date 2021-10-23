@@ -8,7 +8,7 @@ import { User, UserDocument} from '../models/User';
  * @route GET /api/user
  */
 export const getUser = (req: Request, res: Response) => {
-    // req.body.data should hold the donationform information to save to the user
+    // req.body.accessToken should hold the accessToken to specify the user
     if (req.body === undefined || req.body === null || req.body.accessToken === undefined) {
         res.status(400).json({ message: 'No accessToken provided', user: {} });
         return;
@@ -37,7 +37,7 @@ export const getUser = (req: Request, res: Response) => {
  * @route POST /api/user
  */
 export const postUser = (req: Request, res: Response) => {
-    // req.body.data should hold the donationform information to save to the user
+    // req.body.accessToken should hold the accessToken to specify the user
     if (req.body === undefined || req.body === null || req.body.accessToken === undefined) {
         res.status(400).json({ message: 'No accessToken provided', user: {} });
         return;
@@ -45,8 +45,8 @@ export const postUser = (req: Request, res: Response) => {
 
     const accessToken = req.body.accessToken;
 
-    // req.body.data should hold the donationform information to save to the user
-    if (req.body === undefined || req.body === null || req.body.data === undefined) {
+    // req.body.data should hold the information to create the user
+    if (req.body.data === undefined) {
         res.status(400).json({ message: 'No user information provided', user: {} });
         return;
     }
@@ -68,7 +68,7 @@ export const postUser = (req: Request, res: Response) => {
  * @route PUT /api/user
  */
 export const putUser = (req: Request, res: Response) => {
-    // req.body.data should hold the donationform information to save to the user
+    // req.body.accessToken should hold the accessToken to specify the user
     if (req.body === undefined || req.body === null || req.body.accessToken === undefined) {
         res.status(400).json({ message: 'No accessToken provided', user: {} });
         return;
@@ -116,7 +116,7 @@ export const putUser = (req: Request, res: Response) => {
  * @route DELETE /api/user
  */
 export const deleteUser = (req: Request, res: Response) => {
-    // req.body.data should hold the donationform information to save to the user
+    // req.body.accessToken should hold the accessToken to specify the user
     if (req.body === undefined || req.body === null || req.body.accessToken === undefined) {
         res.status(400).json({ message: 'No accessToken provided', user: {} });
         return;

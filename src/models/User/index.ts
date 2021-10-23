@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { Food, FoodSchema } from "./Food";
 
 export type UserDocument = mongoose.Document & {
     _id?: string; // the unqiue id assigned to a user. Let Mongo create this when you insert a document without any _id attribute
@@ -11,6 +12,7 @@ export type UserDocument = mongoose.Document & {
     allergens: string[];
     communityIDs: string[];
     dietaryRestrictions: string[];
+    inventory: Food[];
 }
 
 const userSchema = new mongoose.Schema<UserDocument>({
@@ -22,7 +24,8 @@ const userSchema = new mongoose.Schema<UserDocument>({
     healthy: { type: Boolean, required: true, default: true },
     allergens: { type: [String], required: true, default: [] },
     communityIDs: { type: [String], required: true, default: [] },
-    dietaryRestrictions: {type: [String], required: true, default: [] }
+    dietaryRestrictions: { type: [String], required: true, default: [] },
+    inventory: { type: [FoodSchema], required: true, default: [] }
 }, { timestamps: true });
 
 export const User = mongoose.model<UserDocument>('users', userSchema);
