@@ -13,6 +13,7 @@ export type UserDocument = mongoose.Document & {
     communityIDs: string[];
     dietaryRestrictions: string[];
     inventory: Food[];
+    pictureUrl: string;
 }
 
 const userSchema = new mongoose.Schema<UserDocument>({
@@ -25,7 +26,8 @@ const userSchema = new mongoose.Schema<UserDocument>({
     allergens: { type: [String], required: true, default: [] },
     communityIDs: { type: [String], required: true, default: [] },
     dietaryRestrictions: { type: [String], required: true, default: [] },
-    inventory: { type: [FoodSchema], required: true, default: [] }
+    inventory: { type: [FoodSchema], required: true, default: [] },
+    pictureUrl: {type: String, required: true, default: 'https://raw.githubusercontent.com/XenonMolecule/hackgt8-frontend/main/assets/images/mindfulbytes.png'}
 }, { timestamps: true });
 
 export const User = mongoose.model<UserDocument>('users', userSchema);
