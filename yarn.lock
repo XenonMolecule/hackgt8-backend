@@ -763,6 +763,14 @@
   "resolved" "https://registry.npmjs.org/event-target-shim/-/event-target-shim-5.0.1.tgz"
   "version" "5.0.1"
 
+"expo-server-sdk@^3.6.0":
+  "integrity" "sha512-GyA0BTcFBKk/5gTEO4WOScP9hEttR+GitrcOIl7XwXwE1FHFvbluKiUc9yEjsfEYMgyd78+XhSpGVGQnutGOdA=="
+  "resolved" "https://registry.npmjs.org/expo-server-sdk/-/expo-server-sdk-3.6.0.tgz"
+  "version" "3.6.0"
+  dependencies:
+    "node-fetch" "^2.6.0"
+    "promise-limit" "^2.7.0"
+
 "express-fileupload@^1.2.1":
   "integrity" "sha512-fWPNAkBj+Azt9Itmcz/Reqdg3LeBfaXptDEev2JM8bCC0yDptglCnlizhf0YZauyU5X/g6v7v4Xxqhg8tmEfEA=="
   "resolved" "https://registry.npmjs.org/express-fileupload/-/express-fileupload-1.2.1.tgz"
@@ -1537,7 +1545,7 @@
     "debug" "^4.3.2"
     "tslib" "^2.3.0"
 
-"node-fetch@^2.6.1":
+"node-fetch@^2.6.0", "node-fetch@^2.6.1":
   "integrity" "sha512-mmlIVHJEu5rnIxgEgez6b9GgWXbkZj5YZ7fx+2r94a2E+Uirsp6HsPTPlomfdHtpt/B0cdKviwkoaM6pyvUOpQ=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.5.tgz"
   "version" "2.6.5"
@@ -1647,6 +1655,11 @@
   "integrity" "sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag=="
   "resolved" "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   "version" "2.0.1"
+
+"promise-limit@^2.7.0":
+  "integrity" "sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw=="
+  "resolved" "https://registry.npmjs.org/promise-limit/-/promise-limit-2.7.0.tgz"
+  "version" "2.7.0"
 
 "promise@~2.0":
   "integrity" "sha1-RmSKqdYFr10ucMMCS/WUNtoCuA4="

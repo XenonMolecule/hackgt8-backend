@@ -132,3 +132,49 @@ export const deleteUser = (req: Request, res: Response) => {
         res.status(200).json({ message: 'success', info: deletedInfo });
     });
 };
+
+/**
+ * Add notification token to user
+ * @route PUT /api/user/token
+ */
+export const updatePushTokens = (req: Request, res: Response) => {
+    // req.body.accessToken should hold the accessToken to specify the user
+    if (req.body === undefined || req.body === null || req.body.accessToken === undefined) {
+        res.status(400).json({ message: 'No accessToken provided', user: {} });
+        return;
+    }
+
+    const accessToken = req.body.accessToken;
+
+    if (req.body.pushToken === undefined) {
+        res.status(400).json({ message: 'No pushToken provided', user: {} });
+        return;
+    }
+
+    // Query the users in the db based on the auth0AccessToken
+    User.findOne({ auth0AccessToken: accessToken }, (err:Error, user:UserDocument) => {
+        // If there was an error report code 400 to the client
+        if (err) {
+            res.status(400).json({message: err.message, user});
+            return;
+        }
+
+        if (user === null) {
+            res.status(400).json({message: 'Could not find user in db', user});
+            return;
+        }
+
+        for (let i = 0; i < user.pushTokens.length; i ++) {
+            if (user.pushTokens[i] === req.body.pushToken) {
+                res.status(200).json({message: 'user already had token', user});
+                return;
+            }
+        }
+        user.pushTokens.push(req.body.pushToken);
+        user.save().then((newUser) => {
+            res.status(200).json({message: 'success', user: newUser});
+        }).catch((err)=>{
+            res.status(400).json({message: err.message, user});
+        });
+    });
+};

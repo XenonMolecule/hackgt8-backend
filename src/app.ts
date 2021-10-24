@@ -13,6 +13,7 @@ import { checkJwt } from './util/auth';
 
 // Sub Routers
 import MainRoutes from './routes';
+import {sendBatchNotification} from "./util/notifications";
 
 // Create Express server
 const app = express();
@@ -72,6 +73,12 @@ app.use(fileupload());
 
 // Routes
 app.use('/', MainRoutes);
+
+app.post('/testpush', function(req, res) {
+  res.send('testing push notification');
+  // Add your ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx] to the array below to test sending push notifications to yourself. See the frontend console for a line like Expo Push Token : ExponentPushToken[sfdjiodojifsdojisdfjio]
+  sendBatchNotification('Your Bananas are going to expire tomorrow!', 'Consider composting or sharing to avoid food waste', ['ExponentPushToken[ajjavYGW_1Ng2zFJG_BRlO]']);
+});
 
 /**
  * To make a request to this, go to https://manage.auth0.com/dashboard/us/bog-dev/apis/602861e9ea4b12003f71d5d8/test

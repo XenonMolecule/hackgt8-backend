@@ -11,4 +11,6 @@ router.get('/', checkJwt, extractToken, userController.getUser);
 router.post('/', checkJwt, extractToken, userController.postUser);
 router.put('/', checkJwt, extractToken, userController.putUser);
 router.delete('/', checkJwt, extractToken, userController.deleteUser);
+router.put('/token', checkJwt, extractToken, userController.updatePushTokens);
+
 export default router;

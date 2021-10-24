@@ -111,7 +111,8 @@ export const getRecipes = async (req: Request, res: Response) => {
                                     spoonacularID: recipe.id,
                                     vegan: recipe.vegan,
                                     vegetarian: recipe.vegetarian,
-                                    foodIngredients: foodIngredients || []
+                                    foodIngredients: foodIngredients || [],
+                                    summary: recipe.summary
                                 };
 
                                 recipes.push(newRecipe);
