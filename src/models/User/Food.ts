@@ -7,6 +7,8 @@ export type Food = {
     quantity: number;
     expirationDate: Date;
     perishable: boolean;
+    dateAdded: Date;
+    color: string;
 }
 
 export const FoodSchema = new mongoose.Schema<Food>({
@@ -14,5 +16,7 @@ export const FoodSchema = new mongoose.Schema<Food>({
     category: { type: String, required: true, default: "Beverages" },
     quantity: { type: Number, required: true, default: 0 },
     expirationDate: { type: Date, required: true, default: new Date() },
-    perishable: { type: Boolean, required: true, default: false }
+    perishable: { type: Boolean, required: true, default: false },
+    dateAdded: { type: Date, required: true, default: new Date() },
+    color: { type: String, required: true, default:'#86EA84' }
 });

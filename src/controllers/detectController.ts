@@ -8,7 +8,7 @@ import {google} from "@google-cloud/vision/build/protos/protos";
 import IAnnotateImageResponse = google.cloud.vision.v1p2beta1.IAnnotateImageResponse;
 
 /**
- * Adds a new food to the current user's inventory
+ * Gives suggestions for what the food might be given an input image
  * @route POST /api/detect/food
  */
 export const postFood = async (req: Request & {files:any}, res: Response) => {

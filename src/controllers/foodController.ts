@@ -38,6 +38,7 @@ export const postFood = (req: Request, res: Response) => {
         try {
             const newItem = JSON.parse(req.body.data);
             user.inventory.push(newItem);
+            user.recipesUpdated = false;
             user.save().then((newUser) => {
                 res.status(200).json({message:'success', newUser })
             }).catch((err) => {
@@ -93,6 +94,7 @@ export const putFood = (req: Request, res: Response) => {
                             user.inventory[i][key] = updatedItem[key];
                         }
                     }
+                    user.recipesUpdated = false;
                     user.save().then((updatedUser) => {
                         res.status(200).json({message:'success', updatedUser })
                     }).catch((err) => {
@@ -146,6 +148,7 @@ export const deleteFood = (req: Request, res: Response) => {
             for (let i = 0; i < user.inventory.length; i++) {
                 if (user.inventory[i]._id.toString() === foodid) {
                     user.inventory.splice(i, 1);
+                    user.recipesUpdated = false;
                     user.save().then((updatedUser) => {
                         res.status(200).json({message:'success', updatedUser })
                     }).catch((err) => {
