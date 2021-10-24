@@ -67,7 +67,6 @@ export const getRecipes = async (req: Request, res: Response) => {
                         bodyChunks2.push(chunk);
                     }).on('end', function() {
                         const body2 = JSON.parse(Buffer.concat(bodyChunks2).toString());
-                        console.log(body2);
                         const recipes:Recipe[] = [];
                         let i = -1;
                         body2.forEach((recipe:any) => {
