@@ -11,7 +11,7 @@ export type FoodDocument = mongoose.Document & {
     defaultExpirationDays: number;
 }
 
-const foodSchema = new mongoose.Schema<FoodDocument>({
+const FoodSchema = new mongoose.Schema<FoodDocument>({
     name: { type: String, required: true, default: "New Food" },
     category: { type: String, required: true, default: "Beverages" },
     perishable: { type: Boolean, required: true, default: true },
@@ -23,4 +23,4 @@ const foodSchema = new mongoose.Schema<FoodDocument>({
 
 }, { timestamps: true });
 
-export const Food = mongoose.model<FoodDocument>('foods', foodSchema);
+export const Food = mongoose.model<FoodDocument>('foods', FoodSchema);

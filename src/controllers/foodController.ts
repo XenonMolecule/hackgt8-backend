@@ -12,7 +12,7 @@ export const getFoodNameFromInventory = (inventory:UserFood) => {
             reject(err);
         });
     });
-}
+};
 
 /**
  * Gets Food Info for specified id
@@ -113,5 +113,33 @@ export const deleteFood = (req: Request, res: Response) => {
             return;
         }
         res.status(200).json({ message: 'success', info: deletedInfo });
+    });
+};
+
+function escapeRegex(text:string | any) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+}
+
+/**
+ * Search for a food
+ * @route GET /api/food/search?name={name}
+ */
+export const searchFood = (req: Request, res: Response) => {
+    // req.query.id should hold the id to specify the food
+    if (req.query === undefined || req.query === null || req.query.name === undefined) {
+        res.status(400).json({ message: 'No name provided', food: {} });
+        return;
+    }
+
+    const regex = new RegExp(escapeRegex(req.query.name), 'gi');
+    Food.findOne({ "name": regex }, function(err:any, food:FoodDocument) {
+        if(err) {
+            res.status(400).json({ message: err.message });
+            return;
+        } else if (food === null) {
+            res.status(400).json({ message: 'could not find food with name ' + req.query.name + ' in the db', food });
+        } else {
+            res.status(200).json({ message: 'success', food });
+        }
     });
 };

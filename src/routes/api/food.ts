@@ -12,4 +12,5 @@ router.get('/', foodController.getFood);
 router.post('/', checkJwt, foodController.postFood);
 router.put('/', checkJwt, foodController.putFood);
 router.delete('/', checkJwt, foodController.deleteFood);
+router.get('/search', foodController.searchFood);
 export default router;
