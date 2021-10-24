@@ -38,6 +38,7 @@
     "express-fileupload": "^1.2.1",
     "express-jwt": "^6.1.0",
     "express-session": "^1.17.2",
+    "fuzzball": "^2.0.2",
     "http-errors": "~1.6.3",
     "jade": "^0.29.0",
     "jwks-rsa": "^2.0.5",

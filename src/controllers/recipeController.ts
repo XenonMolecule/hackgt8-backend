@@ -5,6 +5,8 @@ import https from 'https';
 import {Recipe} from "../models/User/Recipe";
 import {getFoodNameFromInventory} from "./foodController";
 
+import fuzz from 'fuzzball';
+
 /**
  * Gives suggestions for recipes given a users ingredients and dietary restrictions
  * @route GET /api/recipes
@@ -90,6 +92,11 @@ export const getRecipes = async (req: Request, res: Response) => {
                                     return ingredient.name;
                                 });
 
+                                const foodIngredients = body[i].usedIngredients.map((ingredient:any) => {
+                                    const ingIndex = fuzz.extract(ingredient.name, ingredientList)[0][2];
+                                    return user.inventory[ingIndex].foodID;
+                                });
+
                                 const newRecipe:Recipe = {
                                     dairyFree: recipe.dairyFree,
                                     diets: recipe.diets,
@@ -103,7 +110,8 @@ export const getRecipes = async (req: Request, res: Response) => {
                                     sourceUrl: recipe.sourceUrl,
                                     spoonacularID: recipe.id,
                                     vegan: recipe.vegan,
-                                    vegetarian: recipe.vegetarian
+                                    vegetarian: recipe.vegetarian,
+                                    foodIngredients: foodIngredients || []
                                 };
 
                                 recipes.push(newRecipe);

@@ -15,6 +15,7 @@ export type Recipe = {
     dairyFree: boolean;
     ingredients: string[];
     instructions: string;
+    foodIngredients: string[];
 }
 
 export const RecipeSchema = new mongoose.Schema<Recipe>({
@@ -30,5 +31,6 @@ export const RecipeSchema = new mongoose.Schema<Recipe>({
     glutenFree: { type: Boolean, required: true, default: false },
     dairyFree: { type: Boolean, required: true, default: false },
     ingredients: { type: [String], required: true, default: [] },
-    instructions: { type: String, required: true, default: 'Please follow the instructions at the link' }
+    instructions: { type: String, required: true, default: 'Please follow the instructions at the link' },
+    foodIngredients: { type: [String], required: true, default: [] }
 });
