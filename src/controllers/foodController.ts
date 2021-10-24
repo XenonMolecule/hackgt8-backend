@@ -81,7 +81,7 @@ export const putFood = (req: Request, res: Response) => {
             res.status(400).json({ message: err.message, food });
         });
     }).catch((err) => {
-        res.status(400).json({ message: err.message, food });
+        res.status(400).json({ message: err.message, food: {} });
     });
 };
 

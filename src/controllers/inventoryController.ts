@@ -5,7 +5,7 @@ import { User, UserDocument} from '../models/User';
 
 /**
  * Adds a new food to the current user's inventory
- * @route POST /api/food
+ * @route POST /api/inventory
  */
 export const postFood = (req: Request, res: Response) => {
     // req.body.accessToken should hold the accessToken to specify the user
@@ -52,7 +52,7 @@ export const postFood = (req: Request, res: Response) => {
 
 /**
  * Updates a food in the current user's inventory
- * @route PUT /api/food?id={foodid}
+ * @route PUT /api/inventory?id={foodid}
  */
 export const putFood = (req: Request, res: Response) => {
     // req.body.accessToken should hold the accessToken to specify the user
@@ -112,7 +112,7 @@ export const putFood = (req: Request, res: Response) => {
 
 /**
  * Deletes a food from the current user's inventory
- * @route DELETE /api/food?id={foodid}
+ * @route DELETE /api/inventory?id={foodid}
  */
 export const deleteFood = (req: Request, res: Response) => {
     // req.body.accessToken should hold the accessToken to specify the user
