@@ -2,6 +2,17 @@ import { Error } from 'mongoose';
 
 import { Response, Request } from 'express';
 import { Food, FoodDocument} from '../models/Food';
+import {UserFood} from "../models/User/Food";
+
+export const getFoodNameFromInventory = (inventory:UserFood) => {
+    return new Promise((resolve, reject) => {
+        Food.findById(inventory.foodID).select('name').then((res) => {
+            resolve(res.name);
+        }).catch((err) => {
+            reject(err);
+        });
+    });
+}
 
 /**
  * Gets Food Info for specified id

@@ -52,7 +52,7 @@ export const postFood = (req: Request, res: Response) => {
 
 /**
  * Updates a food in the current user's inventory
- * @route PUT /api/inventory?id={foodid}
+ * @route PUT /api/inventory?foodid={foodid}
  */
 export const putFood = (req: Request, res: Response) => {
     // req.body.accessToken should hold the accessToken to specify the user
@@ -112,7 +112,7 @@ export const putFood = (req: Request, res: Response) => {
 
 /**
  * Deletes a food from the current user's inventory
- * @route DELETE /api/inventory?id={foodid}
+ * @route DELETE /api/inventory?foodid={foodid}
  */
 export const deleteFood = (req: Request, res: Response) => {
     // req.body.accessToken should hold the accessToken to specify the user
@@ -159,7 +159,7 @@ export const deleteFood = (req: Request, res: Response) => {
             }
             res.status(400).json({message: 'Could not find food with id ' + foodid + ' for current user', user});
         } catch (err) {
-            res.status(200).json({ message: err.message, user });
+            res.status(400).json({ message: err.message, user });
         }
     });
 };
