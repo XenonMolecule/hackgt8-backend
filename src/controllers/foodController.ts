@@ -137,7 +137,7 @@ export const searchFood = (req: Request, res: Response) => {
             res.status(400).json({ message: err.message });
             return;
         } else if (food === null) {
-            res.status(400).json({ message: 'could not find food with name ' + req.query.name + ' in the db', food });
+            res.status(200).json({ message: 'could not find food with name ' + req.query.name + ' in the db', food });
         } else {
             res.status(200).json({ message: 'success', food });
         }
