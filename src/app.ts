@@ -77,7 +77,7 @@ app.use('/', MainRoutes);
 app.post('/testpush', function(req, res) {
   res.send('testing push notification');
   // Add your ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx] to the array below to test sending push notifications to yourself. See the frontend console for a line like Expo Push Token : ExponentPushToken[sfdjiodojifsdojisdfjio]
-  sendBatchNotification('Your Bananas are going to expire tomorrow!', 'Consider composting or sharing to avoid food waste', ['ExponentPushToken[OPnvObOmg5nXdy9O5j9pl8]']);
+  sendBatchNotification('Your Strawberries are going to expire this weekend!', 'Consider composting or sharing to avoid food waste', ['ExponentPushToken[OPnvObOmg5nXdy9O5j9pl8]']);
 });
 
 /**

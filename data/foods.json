@@ -1,0 +1,523 @@
+[{
+  "_id": {
+    "$oid": "6174ecee583b41ea1d5bf669"
+  },
+  "name": "Chicken",
+  "category": "Freezer",
+  "perishable": true,
+  "compostable": true,
+  "color": "#D7A545",
+  "imageUrl": "https://raw.githubusercontent.com/XenonMolecule/hackgt8-frontend/main/assets/images/diet/paleo.png",
+  "defaultExpirationDays": 5,
+  "createdAt": {
+    "$date": "2021-10-24T05:19:42.117Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T05:20:11.404Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174f66a34ca983bd2c942d0"
+  },
+  "name": "Onion",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#D57CF4",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/onion.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:00:10.194Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:00:10.194Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174f84034ca983bd2c942d2"
+  },
+  "name": "Apple",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#D57CF4",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/apple.png?raw=true",
+  "defaultExpirationDays": 10,
+  "createdAt": {
+    "$date": "2021-10-24T06:08:00.311Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:08:00.311Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174f8b034ca983bd2c942d4"
+  },
+  "name": "Asparagus",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#35E45C",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/asparagus.png?raw=true",
+  "defaultExpirationDays": 10,
+  "createdAt": {
+    "$date": "2021-10-24T06:09:52.831Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:09:52.831Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174f93534ca983bd2c942d6"
+  },
+  "name": "Fish",
+  "category": "Freezer",
+  "perishable": true,
+  "compostable": true,
+  "color": "#49BCE0",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/Fish.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:12:05.252Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:12:05.252Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174f97c34ca983bd2c942d8"
+  },
+  "name": "Banana",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DAE92D",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/banana.png?raw=true",
+  "defaultExpirationDays": 6,
+  "createdAt": {
+    "$date": "2021-10-24T06:13:16.205Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:13:16.205Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fa5d34ca983bd2c942da"
+  },
+  "name": "Bellpepper",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#E57373",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/bellpepper.png?raw=true",
+  "defaultExpirationDays": 12,
+  "createdAt": {
+    "$date": "2021-10-24T06:17:01.948Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:17:01.948Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fa8934ca983bd2c942dc"
+  },
+  "name": "Bread",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DB8F49",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/bread.png?raw=true",
+  "defaultExpirationDays": 7,
+  "createdAt": {
+    "$date": "2021-10-24T06:17:45.353Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:17:45.353Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fae134ca983bd2c942de"
+  },
+  "name": "Broccoli",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#33BC38",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/broccoli.png?raw=true",
+  "defaultExpirationDays": 15,
+  "createdAt": {
+    "$date": "2021-10-24T06:19:13.206Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:19:13.206Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fb0d34ca983bd2c942e0"
+  },
+  "name": "Cabbage",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#33BC38",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/cabbage.png?raw=true",
+  "defaultExpirationDays": 17,
+  "createdAt": {
+    "$date": "2021-10-24T06:19:57.806Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:19:57.806Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fb3c34ca983bd2c942e2"
+  },
+  "name": "Cucumber",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#33BC38",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/cucumber.png?raw=true",
+  "defaultExpirationDays": 15,
+  "createdAt": {
+    "$date": "2021-10-24T06:20:44.127Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:20:44.127Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fb5c34ca983bd2c942e4"
+  },
+  "name": "Lettuce",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#33BC38",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/lettuce.png?raw=true",
+  "defaultExpirationDays": 7,
+  "createdAt": {
+    "$date": "2021-10-24T06:21:16.052Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:21:16.052Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fb9e34ca983bd2c942e6"
+  },
+  "name": "Carrot",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#F19540",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/carrot.png?raw=true",
+  "defaultExpirationDays": 16,
+  "createdAt": {
+    "$date": "2021-10-24T06:22:22.623Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:22:22.623Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fc2334ca983bd2c942e8"
+  },
+  "name": "Shrimp",
+  "category": "Freezer",
+  "perishable": true,
+  "compostable": true,
+  "color": "#F19540",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/shrimp.png?raw=true",
+  "defaultExpirationDays": 25,
+  "createdAt": {
+    "$date": "2021-10-24T06:24:35.824Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:24:35.824Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fc8c34ca983bd2c942ea"
+  },
+  "name": "Cheese",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": false,
+  "color": "#DDD516",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/cheese.png?raw=true",
+  "defaultExpirationDays": 17,
+  "createdAt": {
+    "$date": "2021-10-24T06:26:20.129Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:26:20.129Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fcb334ca983bd2c942ec"
+  },
+  "name": "Potato",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DDD516",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/potato.png?raw=true",
+  "defaultExpirationDays": 17,
+  "createdAt": {
+    "$date": "2021-10-24T06:26:59.018Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:26:59.018Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fce534ca983bd2c942ee"
+  },
+  "name": "Lemon",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DDD516",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/lemon.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:27:49.851Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:27:49.851Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fcfd34ca983bd2c942f0"
+  },
+  "name": "Corn",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DDD516",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/corn.png?raw=true",
+  "defaultExpirationDays": 12,
+  "createdAt": {
+    "$date": "2021-10-24T06:28:13.620Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:28:13.620Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fd9834ca983bd2c942f2"
+  },
+  "name": "CocaCola",
+  "category": "Beverage",
+  "perishable": false,
+  "compostable": false,
+  "color": "#F2CCCC",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/cocacola.png?raw=true",
+  "defaultExpirationDays": 100,
+  "createdAt": {
+    "$date": "2021-10-24T06:30:48.885Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:30:48.885Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fe0634ca983bd2c942f4"
+  },
+  "name": "Strawberry",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#E57373",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/strawberry.png?raw=true",
+  "defaultExpirationDays": 7,
+  "createdAt": {
+    "$date": "2021-10-24T06:32:38.890Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:32:38.890Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fe4b34ca983bd2c942f6"
+  },
+  "name": "Steak",
+  "category": "Freezer",
+  "perishable": true,
+  "compostable": true,
+  "color": "#E57373",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/steak.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:33:47.045Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:33:47.045Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174fedc34ca983bd2c942f8"
+  },
+  "name": "Nuts",
+  "category": "Fridge",
+  "perishable": false,
+  "compostable": true,
+  "color": "#EC9C25",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/nuts.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:36:12.178Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:36:12.178Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174ff2d34ca983bd2c942fa"
+  },
+  "name": "Mushroom",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#E3DAAB",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/mushroom.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:37:33.233Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:37:33.233Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6174ffab34ca983bd2c942fc"
+  },
+  "name": "Sugar",
+  "category": "Fridge",
+  "perishable": false,
+  "compostable": true,
+  "color": "#7FDCF9",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/sugar.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T06:39:39.528Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T06:39:39.528Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617515fc826eb9af1bf7fd66"
+  },
+  "name": "Garlic",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#DFAAAA",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/garlic.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T08:14:52.147Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T08:14:52.147Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61751628826eb9af1bf7fd68"
+  },
+  "name": "Ginger",
+  "category": "Fridge",
+  "perishable": true,
+  "compostable": true,
+  "color": "#F9DB73",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/ginger.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T08:15:36.244Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T08:15:36.244Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6175165c826eb9af1bf7fd6a"
+  },
+  "name": "Salt",
+  "category": "Fridge",
+  "perishable": false,
+  "compostable": true,
+  "color": "#B9F3F0",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/salt.png?raw=true",
+  "defaultExpirationDays": 20,
+  "createdAt": {
+    "$date": "2021-10-24T08:16:28.856Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T08:16:28.856Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617516a7826eb9af1bf7fd6c"
+  },
+  "name": "Soy Sauce",
+  "category": "Fridge",
+  "perishable": false,
+  "compostable": true,
+  "color": "#775959",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/soy.png?raw=true",
+  "defaultExpirationDays": 60,
+  "createdAt": {
+    "$date": "2021-10-24T08:17:43.314Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T08:17:43.314Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617516cc826eb9af1bf7fd6e"
+  },
+  "name": "Rice",
+  "category": "Fridge",
+  "perishable": false,
+  "compostable": true,
+  "color": "#F1E2E2",
+  "imageUrl": "https://github.com/XenonMolecule/hackgt8-frontend/blob/main/assets/images/swipe/rice.png?raw=true",
+  "defaultExpirationDays": 60,
+  "createdAt": {
+    "$date": "2021-10-24T08:18:20.082Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-24T08:18:20.082Z"
+  },
+  "__v": 0
+}]
